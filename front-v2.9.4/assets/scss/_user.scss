@@ -1,0 +1,142 @@
+/*------------------------------------
+  File for your custom SCSS style
+------------------------------------*/
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+.ytp-title-channel, ytp-title
+{
+    display: none;
+}
+
+.u-hamburger { 
+    line-height:inherit;
+}
+
+.white-space-pre{
+    white-space: pre;
+}
+
+.landingName {
+    line-height: 1.2;
+}
+
+hr.fadeaway
+{
+    height: 2px;
+    border: none;
+    //background: linear-gradient(to right, rgba(231,234,243,1) 0%,rgba(231,234,243,0) 100%);
+    background: linear-gradient(to right, rgba(231,234,243,1) 0%,rgba(231,234,243,0.2) 100%);
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clear-both {
+    clear:both;
+}
+
+/*----- Validation Summary for ViewModels -----*/
+.validation-summary-errors ul
+{
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+/*---- Success State ----*/
+.valid .form-label + .form-control,
+.valid .custom-select,
+.valid .input-group,
+.valid .form-control:first-child:last-child {
+  box-shadow: 0 0 10px rgba(0, 201, 167, 0.1);
+}
+
+.valid .input-group-text {
+  color: #00c9a7;
+}
+
+.valid:focus,
+.valid *:focus,
+.valid .input-group-text,
+.valid .form-control {
+  border-color: rgba(0, 201, 167, 0.5);
+}
+
+/*-----  Error State  -----*/
+.input-validation-error .form-label + .form-control,
+.input-validation-error .custom-select,
+.input-validation-error .input-group,
+.input-validation-error .form-control:first-child:last-child {
+  box-shadow: 0 0 10px rgba(222, 68, 55, 0.1);
+}
+
+.input-validation-error .input-group-text {
+  color: #de4437;
+}
+
+.input-validation-error:focus,
+.input-validation-error *:focus,
+.input-validation-error .input-group-text,
+.input-validation-error .form-control {
+  border-color: rgba(222, 68, 55, 0.5);
+}
+
+/*-----  Medium Avatar   -----*/
+.u-md-avatar {
+  width: 3.3rem;
+  height: 3.3rem;
+  min-width: 3.3rem;
+  min-height: 3.3rem;
+}    
+
+.u-md-avatar--bordered {
+  border: 2px solid #fff;
+}
+
+    #promoItem1 {
+        order:2;
+    }
+    #promoItem2 {
+        order:1;
+    }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    .landingName {
+        line-height: initial;
+    }
+    
+    .jumbotron {
+        padding: 3rem 2rem;
+    }
+    #promoItem1 {
+        img {
+            max-width: auto;
+        }
+        order:1;
+    }
+    #promoItem2 {
+        order:2;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    #promoItem1 img {
+        max-width: 210px;
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  
+  .w-xl-55 {
+    width: 55% !important;
+  }
+}
